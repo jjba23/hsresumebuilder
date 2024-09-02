@@ -1,0 +1,189 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           hsresumebuilder
+version:        0.2.0.0
+synopsis:       A Haskell resume builder
+description:    See README at
+maintainer:     Josep Bigorra <jjbigorra@gmail.com>
+build-type:     Simple
+
+library
+  exposed-modules:
+      HsResumeBuilder.Model
+      HsResumeBuilder.Log
+      HsResumeBuilder.Log.ConsoleLog      
+      HsResumeBuilder.Configurator
+      HsResumeBuilder.Configurator.TomlConfigurator      
+      HsResumeBuilder.Renderer
+      HsResumeBuilder.Renderer.HtmlRenderer
+      HsResumeBuilder.Themes.JJBA.Components
+      HsResumeBuilder.Themes.JJBA.Styler
+      HsResumeBuilder.Themes.JJBA.Template
+      HsResumeBuilder.Clock
+      HsResumeBuilder.Clock.LiveClock      
+      Lib
+  other-modules:
+      Paths_hsresumebuilder
+  hs-source-dirs:
+      src
+  default-extensions:
+      BangPatterns
+      BinaryLiterals
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveTraversable
+      DoAndIfThenElse
+      EmptyDataDecls
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      NoImplicitPrelude
+      OverloadedStrings
+      PartialTypeSignatures
+      PatternGuards
+      PolyKinds
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      StandaloneDeriving
+      TupleSections
+      TypeFamilies
+      TypeSynonymInstances
+      ViewPatterns
+  ghc-options: -Wall -Weverything -Wno-safe -Wno-unsafe -Wno-missing-import-lists -Wno-missing-deriving-strategies -Wno-missing-safe-haskell-mode -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base
+    , blaze-html
+    , blaze-markup
+    , optics
+    , rio
+    , tomland
+    , free-alacarte
+  default-language: GHC2021
+
+executable hsresumebuilder
+  main-is: Main.hs
+  other-modules:
+      Paths_hsresumebuilder
+  hs-source-dirs:
+      app
+  default-extensions:
+      BangPatterns
+      BinaryLiterals
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveTraversable
+      DoAndIfThenElse
+      EmptyDataDecls
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      NoImplicitPrelude
+      OverloadedStrings
+      PartialTypeSignatures
+      PatternGuards
+      PolyKinds
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      StandaloneDeriving
+      TupleSections
+      TypeFamilies
+      TypeSynonymInstances
+      ViewPatterns
+  ghc-options: -Wall -Weverything -Wno-safe -Wno-unsafe -Wno-missing-import-lists -Wno-missing-deriving-strategies  -Wno-missing-safe-haskell-mode -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base
+    , blaze-html
+    , blaze-markup
+    , optics
+    , rio
+    , tomland
+    , hsresumebuilder
+    , free-alacarte
+  default-language: GHC2021
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hsresumebuilder
+  hs-source-dirs:
+      test
+  default-extensions:
+      BangPatterns
+      BinaryLiterals
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveTraversable
+      DoAndIfThenElse
+      EmptyDataDecls
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      NoImplicitPrelude
+      OverloadedStrings
+      PartialTypeSignatures
+      PatternGuards
+      PolyKinds
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      StandaloneDeriving
+      TupleSections
+      TypeFamilies
+      TypeSynonymInstances
+      ViewPatterns
+  ghc-options: -Wall -Weverything -Wno-safe -Wno-unsafe -Wno-missing-import-lists -Wno-missing-deriving-strategies -Wno-missing-safe-haskell-mode -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base
+    , blaze-html
+    , blaze-markup
+    , optics
+    , rio
+    , tomland
+    , free-alacarte
+  default-language: GHC2021

@@ -1,0 +1,104 @@
+driver-license = [
+  "B driver's license, for (automobile) vehicles up to 3,5 ton"
+]
+interests-hobbies = [
+  "Sailing, snowboarding/skiing, hiking, biking, CrossFit and reading"
+]
+
+  [appearance]
+  theme = "HsResumeBuilder.Themes.JJBA"
+
+    [appearance.document-titles]
+    driver-license-title = "DRIVING"
+    education-title = "EDUCATION"
+    interests-hobbies-title = "MY INTERESTS"
+    languages-title = "LANGUAGES"
+    see-my-websites-title = "ME ON THE INTERNET"
+    short-intro-title = "WHO AM I?"
+    work-experience-title = "WORK EXPERIENCE"
+
+    [appearance.theme-settings]
+    body-color = "#160a02"
+    job-title-color = "#316800"
+    name-color = "#31663f"
+    section-titles-color = "#316500"
+    section-title-border-enabled = false
+    entity-name-color = "#555"
+    position-name-color = "#292929"
+    time-worked-color = "black"
+    link-color = "#6a994e"
+    body-font-family = "Roboto"
+    title-font-family = "Roboto Slab"
+    font-size-1 = "2rem"
+    font-size-2 = "1rem"
+    font-size-3 = "1rem"
+    custom-stylesheets-to-load = [
+"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    ]
+
+  [[education]]
+    entity-name = "Vrije Universiteit Amsterdam (VU Amsterdam)"
+    experience-points = [
+      "FEB. 2022 - AUG. 2022 Master’s research project on the Characterization of mRNA modifications in pediatric high-grade gliomas using Nanopore direct RNA sequencing. Vaske laboratory, Treehouse Childhood Cancer Initiative. Division of Molecular, Cell and Developmental Biology, University of California Santa Cruz (UCSC). ",
+      "Methods/Techniques used: Cell culture of cell lines, total RNA and mRNA extraction, nanodrop technology, tapestation technology, Qubit technology, direct RNA sequencing with Oxford Nanopore Technology and detection of RNA modifications by using several computational tools. ",
+      "NOV. 2021 - JAN. 2022 Master’s literature thesis on Recent developments of organ-on-a-chip cultures for the application of renal toxicity testing. Division of Molecular and Computational Toxicology, Department of Chemistry and Pharmaceutical Sciences, VU Amsterdam.",
+      "JAN. 2021 - JUL. 2021 Master’s research project on iPSC derived hepatocytes as in vitro model for toxicity testing. Division of Molecular and Computational Toxicology, Department of Chemistry and Pharmaceutical Sciences, VU Amsterdam.",
+      "Methods/Techniques used: Cell culture iPSCs and cell lines, immunofluorescence antibody staining, imaging with an Operetta High Content Imager (HCI), functional assays for CYP450 expression, Oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) measurements with an Agilent Seahorse XFe96 analyzer."
+    ]
+    position-name = "Master of Science Biomolecular Sciences"
+    time-worked = "September 2020 to March 2023"
+
+  [[education]]
+    entity-name = "VUmc Amstel Academie"
+    experience-points = [
+      "Two years of clinical experience as an Anesthesia assistant student."
+    ]
+    position-name = "Study Anesthesia assistant"
+    time-worked = "September 2017 to August 2019"
+
+  [languages]
+  simple-mode = false
+  simple-mode-content = "test"
+
+    [[languages.complex-mode-content]]
+      language-name = "Dutch"
+      reading-proficiency = 4
+      speaking-proficiency = 4
+      writing-proficiency = 4
+
+    [[languages.complex-mode-content]]
+      language-name = "English"
+      reading-proficiency = 3
+      speaking-proficiency = 3
+      writing-proficiency = 3
+
+  [personal]
+  job-title = "Research Technician"
+  address-lines = [
+    "Hugo de Grootstraat 19",
+    "1441KH Purmerend",
+    "The Netherlands"
+  ]
+  display-name = "Manon van den Bout"
+  short-intro = [ ]
+
+    [personal.contact]
+    emails = [ "manonvdbout@gmail.com" ]
+    phone-numbers = [ "(+31) 612109890" ]
+
+      [personal.contact.websites]
+      blogs = [ ]
+      code = [ ]
+      linkedin = [ ]
+
+  [[experience]]
+    entity-name = "Smid eten & drinken, Purmerend, The Netherlands"
+    experience-points = [ ]
+    position-name = "Waitress"
+    time-worked = "2019 - Present"
+
+  [[experience]]
+    entity-name = "Dijklanderziekenhuis, location Purmerend/location Hoorn, The Netherlands"
+    experience-points = [ ]
+    position-name = "Student anesthesia assistance"
+    time-worked = "2017 - 2019"

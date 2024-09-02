@@ -1,0 +1,8 @@
+source-repository-package
+  type: git
+  location: https://gitlab.com/jjba-projects/free-alacarte.git
+  tag: 59ff57411741e53a3ee6afee3fb3d0dee1e3e2e8
+  --sha256: e2usk70paDhrTTCkRDG7SwIRmcWYJmKrG0ePcaYCMxY=
+
+packages: .
+    

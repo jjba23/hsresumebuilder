@@ -1,0 +1,157 @@
+driver-license = [
+  "B driver's license, for (automobile) vehicles up to 3,5 ton"
+]
+interests-hobbies = [
+  "I love playing classical and electric guitar.",
+  "I like building computers out of wood and other materials, blogging about my tech opinions and discoveries and playing strategy games sometimes.",
+  "You might also find me doing CrossFit, sanding furniture down, removing weeds from the garden, or improving my house."
+]
+
+  [appearance]
+  theme = "HsResumeBuilder.Themes.JJBA"
+
+    [appearance.document-titles]
+    driver-license-title = "DRIVING"
+    education-title = "EDUCATION"
+    interests-hobbies-title = "MY INTERESTS"
+    languages-title = "LANGUAGES"
+    see-my-websites-title = "ME ON THE INTERNET"
+    short-intro-title = "WHO AM I?"
+    work-experience-title = "WORK EXPERIENCE"
+
+    [appearance.theme-settings]
+    body-color = "#160a02"
+    job-title-color = "#316800"
+    name-color = "#31663f"
+    section-titles-color = "#316500"
+    section-title-border-enabled = false
+    entity-name-color = "#555"
+    position-name-color = "#292929"
+    time-worked-color = "black"
+    link-color = "#6a994e"
+    body-font-family = "Roboto"
+    title-font-family = "Roboto Slab"
+    font-size-1 = "2rem"
+    font-size-2 = "1rem"
+    font-size-3 = "1rem"
+    custom-stylesheets-to-load = [  "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+]
+
+  [[education]]
+  entity-name = "UAlg, Faro, Portugal"
+  experience-points = [
+  "Graduated with 190/200 score. Maximum score for the software developer internship.",
+  "Java, SQL, JavaScript, PHP, Linux, Excel"
+]
+  position-name = "Information Technologies Associate's degree"
+  time-worked = "September 2017 to September 2019"
+
+  [languages]
+  simple-mode = false
+  simple-mode-content = "test"
+
+    [[languages.complex-mode-content]]
+    language-name = "Catalan"
+    reading-proficiency = 4
+    speaking-proficiency = 4
+    writing-proficiency = 4
+
+    [[languages.complex-mode-content]]
+    language-name = "Spanish"
+    reading-proficiency = 4
+    speaking-proficiency = 4
+    writing-proficiency = 4
+
+    [[languages.complex-mode-content]]
+    language-name = "Portuguese"
+    reading-proficiency = 4
+    speaking-proficiency = 4
+    writing-proficiency = 4
+
+    [[languages.complex-mode-content]]
+    language-name = "English"
+    reading-proficiency = 3
+    speaking-proficiency = 3
+    writing-proficiency = 3
+
+    [[languages.complex-mode-content]]
+    language-name = "Dutch"
+    reading-proficiency = 3
+    speaking-proficiency = 3
+    writing-proficiency = 3
+
+  [personal]
+  address-lines = [
+  "Hugo de Grootstraat 19",
+  "1441KH Purmerend",
+  "The Netherlands"
+]
+  display-name = "Josep Bigorra"
+  job-title = "SOFTWARE ENGINEER"
+  short-intro = [
+  "I am a Software Engineer with DevOps experience that is always eager to learn, create solutions, perfecting my skills and taking on challenges. Living in The Netherlands since 2019, born 23/12/1996 in Spain.",
+  "I mostly program in Haskell, Scala, Python, SQL, Nix, Shell and the occasional other. Given the choice I prefer to design software using the functional programming paradigm. My storage engine experience revolves around PostgreSQL, MariaDB, ElasticSearch,  OracleSQL, NoSQL DBs like BigTable, Redis, MongoDB, Firebase.",
+  "I love the Ops side of the projects and platforms too. To say I am a Nix and GNU/Linux enthusiast is an understatement. I like distributed tracing, infrastructure-as-code, CI/CD, type-safe languages and functional programming.",
+  "I love to create solutions of high quality and reliability, constantly improving, automating workflows, creating fast and solid programs, helping and teaching others and to express myself via my creations."
+]
+
+    [personal.contact]
+    emails = [ "jjbigorra@gmail.com" ]
+    phone-numbers = [ "+31 639825138" ]
+
+      [personal.contact.websites]
+      blogs = [ "jointhefreeworld.org" ]
+      code = [ "gitlab.com/jjba-projects" ]
+      linkedin = [ "linkedin.com/in/josepjba" ]
+
+  [[experience]]
+  entity-name = "ZorgDomein B.V., Breukelen, Netherlands"
+  experience-points = [
+  "Experience in Scala, REST APIs, distributed microservices, using functional programming",
+  "Working with Kafka, PostgreSQL, Elasticsearch",
+  "Integration testing, black-box testing, testcontainers, unit, E2E testing, security assessment",
+  "Python data pipelines with Spark and AWS Glue for a product tagging system",
+  "Amazon AWS, EC2, Cloudfront, S3 buckets",
+  "Introducing Nix development shells and flakes along with teaching and mentoring in reproducible builds",
+  "Kubernetes and Docker, ArgoCD, Helm charts"
+]
+  position-name = "Software Engineer"
+  time-worked = "April 2023 - Present"
+
+  [[experience]]
+  entity-name = "IKEA, Amsterdam, Netherlands"
+  experience-points = [
+  "Experience in Go, REST APIs, event-driven microservices",
+  "Experience in Java, Spring Boot and Gradle, Maven",
+  "Apache Beam, Dataflow, data-pipelines",
+  "Google Cloud Platform, Pub/Sub, Serverless computing",
+  "Kubernetes and Docker, Terraform, Infrastructure-as-Code",
+  "Testing: Integration, Unit, Mock, E2E, Property-based, Testcontainers",
+  "PostgreSQL, BigTable, ElasticSearch, Redis, Firebase"
+]
+  position-name = "Software Engineer"
+  time-worked = "January 2022 - March 2023"
+
+  [[experience]]
+  entity-name = "Pro Warehouse, Amsterdam, Netherlands"
+  experience-points = [
+  "Experience with Go (standard & Gin) and PHP (Laravel).",
+  "Relational MySQL-based applications, with complex queries and multiple joins.",
+  "Database design, normalization, migration, maintenance, and backup.",
+  "REST API design, implementation and documentation generation. Secure-by-design practices.",
+  "Server-side rendering frontend applications, communicating with several APIs.",
+  "Jenkins Groovy scripted pipelines with unit tests.",
+  "FreeBSD & Linux server experience, jails and pf Firewall."
+]
+  position-name = "Software Engineer, Scrum Master"
+  time-worked = "November 2019 - December 2021"
+
+  [[experience]]
+  entity-name = "Liderlink Business Solutions, Parchal, Portugal"
+  experience-points = [
+  "Experience with PHP and MySQL, CRUD operations, in several real-estate, hotel and personnel management software.",
+  "Heavy client-side scripting with JavaScript and jQuery in combination with server-side templates.",
+  "Android development, Ubuntu server experience."
+]
+  position-name = "Back-end Developer Internship"
+  time-worked = "February 2019 to July 2019"
