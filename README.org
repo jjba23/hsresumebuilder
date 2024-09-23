@@ -19,13 +19,13 @@ I personally use it myself for my own CV, see  https://jointhefreeworld.org/cv/i
 <img src="resources/screenshots/Schermafdrukvan2023-10-17 23-54-52.png"/>
 #+end_html
 
-I now don't need to change all data to change the looks of it. My data stays safely in a YAML file, while i can go happily about tweaking colors and HTML structure, even CSS files.
+I now don't need to change all data to change the looks of it. My data stays safely in a TOML file, while i can go happily about tweaking colors and HTML structure, even CSS files.
 
-Any new theme is welcome in a merge request, and we gotta figure out the best way to make theme selection customizable from YAML :) I personally want to introduce optparse-applicative package
+Any new theme is welcome in a merge request, and we gotta figure out the best way to make theme selection customizable from TOML :) I personally want to introduce optparse-applicative package
 
 *** Usage
-This CLI tool will read a YAML file named =config.yaml= in the current directory and generate a resume from the preferences in the
-file. All keys in the YAML file are required. In this very repo there is an example file you can use.
+This CLI tool will read a TOML file named =config.toml= in the current directory and generate a resume from the preferences in the
+file. All keys in the TOML file are required. In this very repo there is an example file you can use.
 
 Please note that on fields where a list of items is expected, it's also possible to provide =[]= as a value, in case you have nothing to place there. Failing to provide at least =[]= will result in program failure.
 
