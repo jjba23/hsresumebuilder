@@ -104,7 +104,7 @@ interests-hobbies = [
       linkedin = [ "linkedin.com/in/josepjba" ]
 
   [[experience]]
-  entity-name = "Vandebron Energie B.V."
+  entity-name = "Vandebron Energie B.V., Amsterdam, Netherlands"
   experience-points = [
   "Backend, async and event-driven services with Scala, REST APIs",
   "Distributed microservices, Kafka, PostgreSQL, Elasticsearch",
