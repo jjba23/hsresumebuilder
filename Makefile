@@ -7,9 +7,9 @@ fmt:
 	-deadnix -f
 
 build: fmt
-	nix --extra-experimental-features 'nix-command flakes' --accept-flake-config build .#
+	stack build
 run: fmt
-	nix --extra-experimental-features 'nix-command flakes' --accept-flake-config run .#
+	stack run
 
 install-to-jjba: run
 	cp -fv output.html ../jjba/projects/cv/index.html

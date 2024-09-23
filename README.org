@@ -2,9 +2,9 @@
 
 #+begin_html
 <div>
-  <img alt="haskell" src="https://gitlab.com/jjba-projects/honeybadger/-/raw/master/dist/haskell.png?ref_type=heads"/>
-  <img alt="haskell" src="https://gitlab.com/jjba-projects/honeybadger/-/raw/master/dist/gnu-gpl-v3.png?ref_type=heads"/>
-  <a href="https://gitlab.com/jjba-projects/hsresumebuilder/-/commits/master"><img alt="pipeline status" src="https://gitlab.com/jjba-projects/hsresumebuilder/badges/master/pipeline.svg" /></a>
+  <img alt="haskell" src="https://github.com/jjba23/honeybadger/-/raw/master/dist/haskell.png?ref_type=heads"/>
+  <img alt="haskell" src="https://github.com/jjba23/honeybadger/-/raw/master/dist/gnu-gpl-v3.png?ref_type=heads"/>
+  <a href="https://github.com/jjba23/hsresumebuilder/-/commits/master"><img alt="pipeline status" src="https://github.com/jjba23/hsresumebuilder/badges/master/pipeline.svg" /></a>
 </div>
 #+end_html
 

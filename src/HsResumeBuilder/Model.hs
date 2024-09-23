@@ -36,13 +36,13 @@ languageLevelCodec :: TomlCodec LanguageLevel
 languageLevelCodec =
   LanguageLevel
     <$> Toml.text "language-name"
-      .= (^. #languageName)
+    .= (^. #languageName)
     <*> Toml.int "speaking-proficiency"
-      .= (^. #speakingProficiency)
+    .= (^. #speakingProficiency)
     <*> Toml.int "writing-proficiency"
-      .= (^. #writingProficiency)
+    .= (^. #writingProficiency)
     <*> Toml.int "reading-proficiency"
-      .= (^. #readingProficiency)
+    .= (^. #readingProficiency)
 
 type Languages :: Type
 data Languages = Languages
@@ -56,11 +56,11 @@ languagesCodec :: TomlCodec Languages
 languagesCodec =
   Languages
     <$> Toml.list languageLevelCodec "complex-mode-content"
-      .= (^. #complexModeContent)
+    .= (^. #complexModeContent)
     <*> Toml.bool "simple-mode"
-      .= (^. #simpleMode)
+    .= (^. #simpleMode)
     <*> Toml.text "simple-mode-content"
-      .= (^. #simpleModeContent)
+    .= (^. #simpleModeContent)
 
 type PersonalInfoWebsites :: Type
 data PersonalInfoWebsites = PersonalInfoWebsites
@@ -74,11 +74,11 @@ personalInfoWebsitesCodec :: TomlCodec PersonalInfoWebsites
 personalInfoWebsitesCodec =
   PersonalInfoWebsites
     <$> Toml.arrayOf Toml._Text "blogs"
-      .= (^. #blogs)
+    .= (^. #blogs)
     <*> Toml.arrayOf Toml._Text "code"
-      .= (^. #codee)
+    .= (^. #codee)
     <*> Toml.arrayOf Toml._Text "linkedin"
-      .= (^. #linkedIn)
+    .= (^. #linkedIn)
 
 type PersonalInfoContactInfo :: Type
 data PersonalInfoContactInfo = PersonalInfoContactInfo
@@ -92,11 +92,11 @@ personalInfoContactInfoCodec :: TomlCodec PersonalInfoContactInfo
 personalInfoContactInfoCodec =
   PersonalInfoContactInfo
     <$> Toml.arrayOf Toml._Text "phone-numbers"
-      .= (^. #phoneNumbers)
+    .= (^. #phoneNumbers)
     <*> Toml.arrayOf Toml._Text "emails"
-      .= (^. #emails)
+    .= (^. #emails)
     <*> Toml.table personalInfoWebsitesCodec "websites"
-      .= (^. #websites)
+    .= (^. #websites)
 
 type PersonalInfo :: Type
 data PersonalInfo = PersonalInfo
@@ -112,15 +112,15 @@ personalInfoCodec :: TomlCodec PersonalInfo
 personalInfoCodec =
   PersonalInfo
     <$> Toml.text "display-name"
-      .= (^. #displayName)
+    .= (^. #displayName)
     <*> Toml.text "job-title"
-      .= (^. #jobTitle)
+    .= (^. #jobTitle)
     <*> Toml.arrayOf Toml._Text "address-lines"
-      .= (^. #addressLines)
+    .= (^. #addressLines)
     <*> Toml.table personalInfoContactInfoCodec "contact"
-      .= (^. #contact)
+    .= (^. #contact)
     <*> Toml.arrayOf Toml._Text "short-intro"
-      .= (^. #shortIntro)
+    .= (^. #shortIntro)
 
 type JJBASettings :: Type
 data JJBASettings = JJBASettings
@@ -146,35 +146,35 @@ jjbaSettingsCodec :: TomlCodec JJBASettings
 jjbaSettingsCodec =
   JJBASettings
     <$> Toml.text "body-color"
-      .= (^. #bodyColor)
+    .= (^. #bodyColor)
     <*> Toml.text "job-title-color"
-      .= (^. #jobTitleColor)
+    .= (^. #jobTitleColor)
     <*> Toml.text "name-color"
-      .= (^. #nameColor)
+    .= (^. #nameColor)
     <*> Toml.text "section-titles-color"
-      .= (^. #sectionTitlesColor)
+    .= (^. #sectionTitlesColor)
     <*> Toml.bool "section-title-border-enabled"
-      .= (^. #sectionTitleBorderEnabled)
+    .= (^. #sectionTitleBorderEnabled)
     <*> Toml.text "entity-name-color"
-      .= (^. #entityNameColor)
+    .= (^. #entityNameColor)
     <*> Toml.text "position-name-color"
-      .= (^. #positionNameColor)
+    .= (^. #positionNameColor)
     <*> Toml.text "time-worked-color"
-      .= (^. #timeWorkedColor)
+    .= (^. #timeWorkedColor)
     <*> Toml.text "link-color"
-      .= (^. #linkColor)
+    .= (^. #linkColor)
     <*> Toml.text "body-font-family"
-      .= (^. #bodyFontFamily)
+    .= (^. #bodyFontFamily)
     <*> Toml.text "title-font-family"
-      .= (^. #titleFontFamily)
+    .= (^. #titleFontFamily)
     <*> Toml.text "font-size-1"
-      .= (^. #fontSize1)
+    .= (^. #fontSize1)
     <*> Toml.text "font-size-2"
-      .= (^. #fontSize2)
+    .= (^. #fontSize2)
     <*> Toml.text "font-size-3"
-      .= (^. #fontSize3)
+    .= (^. #fontSize3)
     <*> Toml.arrayOf Toml._Text "custom-stylesheets-to-load"
-      .= (^. #customStylesheetsToLoad)
+    .= (^. #customStylesheetsToLoad)
 
 type AppearancePreferences :: Type
 data AppearancePreferences = AppearancePreferences
@@ -188,11 +188,11 @@ appearancePreferencesCodec :: TomlCodec AppearancePreferences
 appearancePreferencesCodec =
   AppearancePreferences
     <$> Toml.text "theme"
-      .= (^. #theme)
+    .= (^. #theme)
     <*> Toml.table documentTitlesCodec "document-titles"
-      .= (^. #documentTitles)
+    .= (^. #documentTitles)
     <*> Toml.table jjbaSettingsCodec "theme-settings"
-      .= (^. #themeSettings)
+    .= (^. #themeSettings)
 
 type ExperienceItem :: Type
 data ExperienceItem = ExperienceItem
@@ -207,13 +207,13 @@ experienceItemCodec :: TomlCodec ExperienceItem
 experienceItemCodec =
   ExperienceItem
     <$> Toml.text "entity-name"
-      .= (^. #entityName)
+    .= (^. #entityName)
     <*> Toml.arrayOf Toml._Text "experience-points"
-      .= (^. #experiencePoints)
+    .= (^. #experiencePoints)
     <*> Toml.text "position-name"
-      .= (^. #positionName)
+    .= (^. #positionName)
     <*> Toml.text "time-worked"
-      .= (^. #timeWorked)
+    .= (^. #timeWorked)
 
 type DocumentTitles :: Type
 data DocumentTitles = DocumentTitles
@@ -231,19 +231,19 @@ documentTitlesCodec :: TomlCodec DocumentTitles
 documentTitlesCodec =
   DocumentTitles
     <$> Toml.text "short-intro-title"
-      .= (^. #shortIntroTitle)
+    .= (^. #shortIntroTitle)
     <*> Toml.text "work-experience-title"
-      .= (^. #workExperienceTitle)
+    .= (^. #workExperienceTitle)
     <*> Toml.text "education-title"
-      .= (^. #educationTitle)
+    .= (^. #educationTitle)
     <*> Toml.text "interests-hobbies-title"
-      .= (^. #interestsHobbiesTitle)
+    .= (^. #interestsHobbiesTitle)
     <*> Toml.text "driver-license-title"
-      .= (^. #driverLicenseTitle)
+    .= (^. #driverLicenseTitle)
     <*> Toml.text "languages-title"
-      .= (^. #languagesTitle)
+    .= (^. #languagesTitle)
     <*> Toml.text "see-my-websites-title"
-      .= (^. #seeMyWebsitesTitle)
+    .= (^. #seeMyWebsitesTitle)
 
 type HsResumeBuilderConfig :: Type
 data HsResumeBuilderConfig = HsResumeBuilderConfig
@@ -261,19 +261,19 @@ hsResumeBuilderConfigCodec :: TomlCodec HsResumeBuilderConfig
 hsResumeBuilderConfigCodec =
   HsResumeBuilderConfig
     <$> Toml.table personalInfoCodec "personal"
-      .= (^. #personal)
+    .= (^. #personal)
     <*> Toml.table appearancePreferencesCodec "appearance"
-      .= (^. #appearance)
+    .= (^. #appearance)
     <*> Toml.list experienceItemCodec "experience"
-      .= (^. #experience)
+    .= (^. #experience)
     <*> Toml.list experienceItemCodec "education"
-      .= (^. #education)
+    .= (^. #education)
     <*> Toml.arrayOf Toml._Text "interests-hobbies"
-      .= (^. #interestsHobbies)
+    .= (^. #interestsHobbies)
     <*> Toml.arrayOf Toml._Text "driver-license"
-      .= (^. #driverLicense)
+    .= (^. #driverLicense)
     <*> Toml.table languagesCodec "languages"
-      .= (^. #languages)
+    .= (^. #languages)
 
 makeFieldLabelsNoPrefix ''Languages
 makeFieldLabelsNoPrefix ''LanguageLevel

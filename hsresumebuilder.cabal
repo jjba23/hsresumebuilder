@@ -1,15 +1,12 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.35.2.
---
--- see: https://github.com/sol/hpack
-
 name:           hsresumebuilder
-version:        0.2.0.0
+version:        0.2.0.1
 synopsis:       A Haskell resume builder
 description:    See README at
 maintainer:     Josep Bigorra <jjbigorra@gmail.com>
 build-type:     Simple
+license:        GPL-3                
 
 library
   exposed-modules:
@@ -69,7 +66,7 @@ library
       ViewPatterns
   ghc-options: -Wall -Weverything -Wno-safe -Wno-unsafe -Wno-missing-import-lists -Wno-missing-deriving-strategies -Wno-missing-safe-haskell-mode -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base
+      base < 5
     , blaze-html
     , blaze-markup
     , optics

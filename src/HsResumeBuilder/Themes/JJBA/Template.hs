@@ -20,7 +20,7 @@ renderResume config = docTypeHtml $ do
 
   H.body
     $ main
-      ! applyStyles [("font-family", bodyFontFamily')]
+    ! applyStyles [("font-family", bodyFontFamily')]
     $ do
       H.div
         ! applyStyles
@@ -59,8 +59,8 @@ renderResume config = docTypeHtml $ do
                 )
 
       -- Short introduction section
-      renderShortSection config (shortIntroTitle documentTitles') $
-        forM_ (shortIntro personal') (jJustified bodyColor' (fontSize3 theme'))
+      renderShortSection config (shortIntroTitle documentTitles')
+        $ forM_ (shortIntro personal') (jJustified bodyColor' (fontSize3 theme'))
 
       -- Work experience section
       renderLongSection
@@ -86,8 +86,8 @@ renderResume config = docTypeHtml $ do
       renderShortSection
         config
         (driverLicenseTitle documentTitles')
-        ( ul $
-            forM_ (driverLicense config) (jListItem bodyColor' (fontSize3 theme'))
+        ( ul
+            $ forM_ (driverLicense config) (jListItem bodyColor' (fontSize3 theme'))
         )
 
       -- Interests hobbies section
@@ -97,40 +97,40 @@ renderResume config = docTypeHtml $ do
         (fmap (jJustified bodyColor' (fontSize3 theme')) (interestsHobbies config))
 
       -- Websites section
-      renderShortSection config (seeMyWebsitesTitle documentTitles') $
-        jFlexContainer' $
-          do
-            mapM_
-              ( jIconWithText
-                  bodyColor'
-                  bodyColor'
-                  (fontSize3 theme')
-                  ["fa-solid", "fa-rss"]
-              )
-              (blogs . websites . contact $ personal')
+      renderShortSection config (seeMyWebsitesTitle documentTitles')
+        $ jFlexContainer'
+        $ do
+          mapM_
+            ( jIconWithText
+                bodyColor'
+                bodyColor'
+                (fontSize3 theme')
+                ["fa-solid", "fa-rss"]
+            )
+            (blogs . websites . contact $ personal')
 
-            mapM_
-              ( jIconWithText
-                  bodyColor'
-                  bodyColor'
-                  (fontSize3 theme')
-                  ["fa-brands", "fa-github"]
-              )
-              (codee . websites . contact $ personal')
+          mapM_
+            ( jIconWithText
+                bodyColor'
+                bodyColor'
+                (fontSize3 theme')
+                ["fa-brands", "fa-github"]
+            )
+            (codee . websites . contact $ personal')
 
-            mapM_
-              ( jIconWithText
-                  bodyColor'
-                  bodyColor'
-                  (fontSize3 theme')
-                  ["fa-brands", "fa-linkedin"]
-              )
-              (linkedIn . websites . contact $ personal')
+          mapM_
+            ( jIconWithText
+                bodyColor'
+                bodyColor'
+                (fontSize3 theme')
+                ["fa-brands", "fa-linkedin"]
+            )
+            (linkedIn . websites . contact $ personal')
 
       -- Credits to hsResumeBuilder
       jShortSection
         $ H.div
-          ! applyStyles [("margin-top", "16px"), ("text-align", "center")]
+        ! applyStyles [("margin-top", "16px"), ("text-align", "center")]
         $ small
         $ jLink
           linkColor'

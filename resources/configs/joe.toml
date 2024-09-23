@@ -29,12 +29,12 @@ interests-hobbies = [
     position-name-color = "#292929"
     time-worked-color = "black"
     link-color = "#6a994e"
-    body-font-family = "Roboto"
-    title-font-family = "Roboto Slab"
+    body-font-family = "Inter"
+    title-font-family = "Inter"
     font-size-1 = "2rem"
-    font-size-2 = "1rem"
-    font-size-3 = "1rem"
-    custom-stylesheets-to-load = [  "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    font-size-2 = "1.2rem"
+    font-size-3 = "1.1rem"
+    custom-stylesheets-to-load = [  "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 ]
 
   [[education]]
@@ -82,9 +82,8 @@ interests-hobbies = [
 
   [personal]
   address-lines = [
-  "Hugo de Grootstraat 19",
   "1441KH Purmerend",
-  "The Netherlands"
+  "Netherlands"
 ]
   display-name = "Josep Bigorra"
   job-title = "SOFTWARE ENGINEER"
@@ -101,8 +100,19 @@ interests-hobbies = [
 
       [personal.contact.websites]
       blogs = [ "jointhefreeworld.org" ]
-      code = [ "gitlab.com/jjba-projects" ]
+      code = [ "github.com/jjba23" ]
       linkedin = [ "linkedin.com/in/josepjba" ]
+
+  [[experience]]
+  entity-name = "Vandebron Energie B.V."
+  experience-points = [
+  "Backend, async and event-driven services with Scala, REST APIs",
+  "Distributed microservices, Kafka, PostgreSQL, Elasticsearch",
+  "Functional programming, domain modelling",
+  "Kubernetes and Docker, ArgoCD, Helm charts"  
+  ]
+  position-name = "Software Engineer"
+  time-worked = "August 2024 - present"
 
   [[experience]]
   entity-name = "ZorgDomein B.V., Breukelen, Netherlands"
@@ -116,7 +126,7 @@ interests-hobbies = [
   "Kubernetes and Docker, ArgoCD, Helm charts"
 ]
   position-name = "Software Engineer"
-  time-worked = "April 2023 - Present"
+  time-worked = "April 2023 - July 2024"
 
   [[experience]]
   entity-name = "IKEA, Amsterdam, Netherlands"
